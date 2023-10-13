@@ -1,0 +1,13 @@
+.habibie {
+    background: linear-gradient(to bottom, #5bb7e2, white);
+    .all {
+        position: sticky;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 400px;
+        @media screen and (max-width:766px) {
+            right: -25%;
+        }
+    }
+}
