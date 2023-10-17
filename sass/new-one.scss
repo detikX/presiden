@@ -1,9 +1,18 @@
 .new-one {
-    background: #df4841;
+    background: #df4841 url("../img/kotaks.png") repeat;
     color: white;
     // padding: 42px 0 32px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(#df4841, rgba(#df4841,.8), #df4841);
+    }
     .wrap-detikx {
         margin-top: 72px;
+        position: relative;
+        z-index: 20;
         display: block;
     }
     .bungkus {
