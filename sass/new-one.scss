@@ -114,6 +114,12 @@
     .anak {
         margin: 32px auto 0;
         display: block;
+        .mb-5 {
+            margin-bottom: 5rem !important;
+            @media screen and (max-width:766px) {
+                margin-bottom: 3rem !important;
+            }
+        }
         .data-anak {
             display: inline-block;
             vertical-align: top;
@@ -126,23 +132,29 @@
                 width: 58%;
                 
             }
-            .judul {
-                font-size: 1.2rem;
-                font-family: 'Poppins';
-                padding: 0;
-                color: white;
-                margin: 0 0 8px 0;
-            }
         }
-
+        
         .data-foto {
+            .judul {
+                // font-size: 1.2rem;
+                // font-family: 'Poppins';
+                // padding: 0;
+                // color: white;
+                // margin: 0 0 8px 0;
+                margin-top: 4px;
+                font-size: .85rem;
+                text-transform: uppercase;
+                text-align: center;
+            }
             display: inline-block;
             width: 120px;
             height: 120px;
             border-radius: 50%;
             vertical-align: top;
+            border: 2px solid;
             img {
                 width: 100%;
+
                 height: 100%;
                 border-radius: 50%;
                 object-fit: cover;
