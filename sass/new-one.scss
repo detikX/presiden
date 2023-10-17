@@ -172,7 +172,9 @@
     //     position: absolute;
     //     inset: 0;
     // }
-
+        .data-anak {
+            background: rgba(#df4841,.6);
+        }
     .sticky {
         &::before {
             content: "";
