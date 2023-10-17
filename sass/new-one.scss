@@ -173,4 +173,13 @@
     //     inset: 0;
     // }
 
+    .sticky {
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, #df4841, rgba(#df4841,.2), #df4841);
+        }
+    }
+
 }
