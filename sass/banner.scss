@@ -1,5 +1,14 @@
 .banner {
     padding: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100px;
+        background: linear-gradient(to top, #71c4c3, transparent);
+    }
     &__title {
         position: absolute;
         left: 15%;
