@@ -1,5 +1,6 @@
 .banner {
     padding: 0;
+    background: #df4841;
     .demos {
         position: absolute;
         inset: 0;
@@ -23,7 +24,7 @@
         right: 0;
         left: 0;
         height: 100px;
-        background: linear-gradient(to top, #71c4c3, transparent);
+        background: linear-gradient(to top, #df4841, transparent);
     }
     &__title {
         position: absolute;
