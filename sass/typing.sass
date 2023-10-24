@@ -1,6 +1,15 @@
+@keyframes lala
+    0%, 100% 
+        top: 10%
+    
+    50% 
+        top: 12%
+   
+
 .typing
     display: block
     width: 140px
+    box-shadow: 6px 6px #81221d
     height: 80px
     border-radius: 50px
     margin: 0 1rem
@@ -10,6 +19,7 @@
     align-items: center
     position: absolute
     left: 44%
+    animation: lala 2s linear infinite
     top: 10%
     @media screen and (max-width:766px)
         left: 55%
