@@ -227,6 +227,10 @@
                 background: #fed860;
                 left: 20%;
                 top: 24%;
+                @media screen and (max-width:766px) {
+                    width: 80px;
+                    height: 80px;
+                }
             }
             .judul {
                 // font-size: 1.2rem;
