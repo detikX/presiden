@@ -103,7 +103,7 @@
         margin-left: 8px;
         @media screen and (max-width:766px) {
             margin-left: 4px;
-            width: 55%;
+            width: 50%;
             
         }
         .name {
@@ -224,8 +224,10 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
+            // background: linear-gradient(45deg, #df4942, #dfad41);
+            background: linear-gradient(45deg, #b13f3a, #df4841);
             vertical-align: top;
-            border: 2px solid;
+            border: 3px solid;
             @media screen and (max-width:766px) {
                 width: 120px;
                 height: 120px;
