@@ -584,11 +584,41 @@
 
 #jokowi {
     @keyframes motor {
-        0%, 100% {
+        0% {
             left: 120px;
+            opacity: 0;
+        }
+        10% {
+            left: 120px;
+            opacity: 0;
+        }
+        25% {
+            left: 120px;
+            opacity: .5;
+        }
+        30% {
+            left: 120px;
+            opacity: 1;
         }
         50% {
+            left: 110px;
+            opacity: 1;
+        }
+        70% {
             left: 100px;
+            opacity: 1;
+        }
+        80% {
+            left: 50px;
+            opacity: 1;
+        }
+        90% {
+            left: 50px;
+            opacity: .5;
+        }
+        100% {
+            left: 50px;
+            opacity: 0;
         }
     }
 
@@ -636,6 +666,7 @@
         animation: motor 2s linear infinite;
         top: 177px;
         width: 120px;
+        opacity: 0;
         height: 80px;
         z-index: 3;
         filter: drop-shadow(2px 4px 6px black);
