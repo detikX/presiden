@@ -209,12 +209,24 @@
         
         .data-foto {
             &::before {
+                // content: "";
+                // position: absolute;
+                // inset: 0;
+                // border-radius: 50%;
+                // background: linear-gradient(to bottom, rgba(#fff,.8), rgba(#2b2b2b,.2), rgba(#2b2b2b,.8));
+                // z-index: -1;
+
                 content: "";
                 position: absolute;
-                inset: 0;
+                width: 90px;
+                /* inset: 0; */
                 border-radius: 50%;
-                background: linear-gradient(to bottom, rgba(#fff,.8), rgba(#2b2b2b,.2), rgba(#2b2b2b,.8));
+                /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(43, 43, 43, 0.2), rgba(43, 43, 43, 0.8)); */
                 z-index: -1;
+                height: 90px;
+                background: #fed860;
+                left: 20%;
+                top: 24%;
             }
             .judul {
                 // font-size: 1.2rem;
@@ -231,10 +243,11 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
+            background: #bf3d37;
             // background: linear-gradient(45deg, #df4942, #dfad41);
             // background: linear-gradient(45deg, #b13f3a, #df4841);
-            background: url('../img/popart.jpg');
-            background-size: cover;
+            // background: url('../img/popart.jpg');
+            // background-size: cover;
             vertical-align: top;
             border: 3px solid;
             @media screen and (max-width:766px) {
