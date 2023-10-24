@@ -407,6 +407,29 @@
     }
 }
 
+#sby {
+    .lukis {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        left: 160px;
+        z-index: 2;
+        @media screen and (max-width:766px) {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 80px;
+            bottom: 20px;
+        }
+        bottom: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
 #soekarno {
     .camera {
         position: absolute;
