@@ -84,6 +84,9 @@
             bottom: 0;
             left: 0;
             right: 0;
+            @media screen and (max-width:766px) {
+                height: 150%;
+            }
             img {
                 width: 100%;
                 border-radius: 50% 50% ;
@@ -300,6 +303,56 @@
 }
 
 #gusdur {
+    background: #02754c;
+    .data-foto {
+        background: #095b3e;
+    }
+    .lingkaran {
+        border: 4px solid #000;
+    }
+    .silang {
+        position: absolute;
+        bottom: 5%;
+        right: 15%;
+
+    }
+    .isolation {
+        position: absolute;
+        top: -10vh;
+        left: -5vw;
+        right: 0;
+        width: 120%;
+        height: auto;
+        z-index: -1;
+        @media screen and (max-width:766px) {
+            top: 0;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .kertas {
+        position: absolute;
+        top: -5vh;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        @media screen and (max-width:766px) {
+            top: 0;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+    &::before {
+        background: initial;
+    }
     .bg {
         width: 80px;
         height: auto;
@@ -323,6 +376,19 @@
 }
 
 #megawati {
+    .isolations {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     .banteng {
         position: absolute;
         width: 220px;
