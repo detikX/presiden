@@ -474,6 +474,37 @@
 }
 
 #sby {
+    background: #004d99;
+    padding: 52px 0 32px;
+    @media screen and (max-width:766px) {
+        padding: 32px 0;
+    }
+    .isolations {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        filter: drop-shadow(3px 7px 5px black);
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .lingkaran {
+        border: 4px solid #87bfe4;
+    }
+    &::before {
+        background: initial;
+    }
+    .data-foto {
+        background: #004d99;
+        &::before {
+            background: #87bfe4;
+        }
+    }
     .lukis {
         width: 90px;
         height: 90px;
