@@ -4,6 +4,20 @@
     padding-top: 0;
     background: #df4841;
     color: #f7f7f7;
+    .sticky {
+        &::before {
+            // @media screen and (max-width:766px) {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(to right, #dc6564 30%, #ad3231 0%);
+                bottom: 24%;
+            // }
+        }
+        &::after {
+
+        }
+    }
     // .sticky {
     //     &::before {
     //         content: "";

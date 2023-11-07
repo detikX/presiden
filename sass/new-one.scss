@@ -68,8 +68,10 @@
         width: 240px;
         display: inline-block;
         @media screen and (max-width:766px) {
-            width: 130px;
-            height: 130px;
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
         }
         background: white;
         height: 240px;
@@ -102,8 +104,10 @@
         width: 60%;
         margin-left: 8px;
         @media screen and (max-width:766px) {
-            margin-left: 4px;
-            width: 50%;
+            // margin-left: 4px;
+            width: 100%;
+            text-align: center;
+            display: block;
             
         }
         .name {
@@ -440,8 +444,9 @@
         bottom: 0;
         filter: drop-shadow(2px 4px 6px black);
         @media screen and (max-width:766px) {
-            left: 80px;
+            left: 60%;
             width: 50px;
+            bottom: 20%;
         }
         img {
             width: 100%;
