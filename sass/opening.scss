@@ -36,13 +36,16 @@
     .massa {
         position: absolute;
         /* bottom: 50%; */
-        left: 16%;
+        // left: 16%;
         // opacity: .6;
-        /* right: 0; */
-        top: 24%;
-        width: 320px;
+        // /* right: 0; */
+        // top: 24%;
+        right: 0;
+        bottom: 0;
+        width: 60%;
         height: auto;
-        z-index: 0;
+        z-index: 7;
+        // z-index: 0;
         // &::before {
         //     content: "";
         //     position: absolute;
@@ -50,7 +53,7 @@
         //     background: linear-gradient(to top, rgba(#df4841,1), rgba(#df4841,.2), rgba(#df4841,1));
         // }
         @media screen and (max-width:766px) {
-            width: 200px;
+            width: 100%;
         }
         img {
             width: 100%;
@@ -115,7 +118,7 @@
         background: rgba($color: #14546b, $alpha: .9);
         // background: rgba(53, 51, 58,.8);
         padding: 8px;
-        margin-bottom: 40vh;
+        margin-bottom: 20vh;
          p {
             margin-bottom: 0;
          }
