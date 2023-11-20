@@ -1,6 +1,8 @@
 .new-one {
-    background: #df4841 url("../img/kotaks.png") repeat fixed;
-    color: white;
+    // background: #df4841 url("../img/kotaks.png") repeat fixed;
+    // color: white;
+    background: $birux;
+    color: #333;
     // padding: 42px 0 32px;
     @media screen and (max-width:766px) {
         min-height: auto;
@@ -9,7 +11,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(#df4841, rgba(#df4841,.8), #df4841);
+        // background: linear-gradient(#df4841, rgba(#df4841,.8), #df4841);
     }
     .wrap-detikx {
         margin-top: 72px;
@@ -20,8 +22,15 @@
     .bungkus {
         // display: inline-block;
         margin-top: 50px;
+        background: white;
+        border-radius: 16px;
+        border: 1px solid rgba(39,39,39,.75);
         display: block;
         position: relative;
+        padding: 24px;
+        @media screen and (max-width:768px) {
+            padding: 24px 16px;
+        }
         
     }
     .lingkaran {
@@ -68,15 +77,28 @@
         width: 240px;
         display: inline-block;
         @media screen and (max-width:766px) {
-            width: 130px;
-            height: 130px;
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
         }
         background: white;
         height: 240px;
         vertical-align: top;
         border-radius: 50%;
-        border: 4px solid #b41a1e;
-        position: relative;
+        border: 2px solid #333;
+        // position: relative;
+        // box-shadow: none;
+        // // border-radius: 25px;
+        // font-weight: bold;
+        // // border: 1px solid rgba(39,39,39,.75);
+        // transform: translate(-2px,-2px);
+        // transition: all .3s cubic-bezier(.5,2.5,.7,.7) !important;
+        // &:hover {
+        //     box-shadow: 2px 2px 0 0 #333;
+        //     outline: 0;
+        //     transform: none;
+        // }
         .img {
             width: 100%;
             height: 130%;
@@ -85,7 +107,7 @@
             left: 0;
             right: 0;
             @media screen and (max-width:766px) {
-                height: 150%;
+                height: 120%;
             }
             img {
                 width: 100%;
@@ -102,20 +124,25 @@
         vertical-align: top;
         position: relative;
         z-index: 4;
-        width: 60%;
-        margin-left: 8px;
+        width: 50%;
+        margin-left: 36px;
         @media screen and (max-width:766px) {
-            margin-left: 4px;
-            width: 50%;
+            // margin-left: 4px;
+            width: 100%;
+            margin-left: 0;
+            text-align: center;
+            display: block;
             
         }
         .name {
             font-weight: 700;
-            text-transform: uppercase;
+            // text-transform: uppercase;
+            line-height: 2.4rem;
             font-size: 2.2rem;
-            font-style: italic;
+            // font-style: italic;
             @media screen and (max-width:766px) {
                 font-size: 1.3rem;
+                line-height: 1.3rem;
                 
             }
         }
@@ -124,6 +151,7 @@
     .anak {
         margin: 32px auto 0;
         display: block;
+        display: none;
         .mb-5 {
             margin-bottom: 5rem !important;
             @media screen and (max-width:766px) {
@@ -530,6 +558,25 @@
     }
 }
 
+.btn-lihat {
+    box-shadow: 2px 2px 0 0 #333;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid rgba(39,39,39,.75);
+    transform: translate(-2px,-2px);
+    transition: all .3s cubic-bezier(.5,2.5,.7,.7) !important;
+    &:hover {
+        box-shadow: none;
+        outline: 0;
+        transform: none;
+    }
+    &:focus {
+        border: 1px solid rgba(39,39,39,.75);
+        box-shadow: 2px 2px 0 0 #333;
+    }
+
+}
+
 #soekarno {
     .camera {
         position: absolute;
@@ -540,8 +587,10 @@
         bottom: 0;
         filter: drop-shadow(2px 4px 6px black);
         @media screen and (max-width:766px) {
-            left: 80px;
+            left: 60%;
             width: 50px;
+            display: none;
+            bottom: 20%;
         }
         img {
             width: 100%;
@@ -570,12 +619,12 @@
         margin: 0 auto;
         background: white;
         text-align: center;
-        box-shadow: 6px 6px #9b1f19;
+        box-shadow: 6px 6px #178a89 ;
         padding: 8px 16px;
         position: relative;
         h3 {
             font-size: 2.5rem;
-            color: #df4841;
+            color: #178a89 ;
             margin-bottom: 0;
             @media screen and (max-width:766px) {
                 font-size: 1.9rem;
@@ -593,7 +642,7 @@
                 height: 6px;
                 border-radius: 8px;
                 top: 45%;
-                background: #df4841;
+                background: #178a89 ;
                 @media screen and (max-width:766px) {
                     width: 0%;
                 }
@@ -607,7 +656,7 @@
                 height: 6px;
                 border-radius: 8px;
                 top: 45%;
-                background: #df4841;
+                background: #178a89 ;
                 @media screen and (max-width:766px) {
                     width: 0%;
                 }
@@ -643,7 +692,7 @@
     border-radius: 50px;
     background: #f7f7f7;
     position: absolute;
-    box-shadow: -6px 6px #81221d;
+    box-shadow: -6px 6px #269796;
     top: 10%;
     left: 22%;
     @media screen and (max-width:766px) {

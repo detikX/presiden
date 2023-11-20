@@ -4,6 +4,20 @@
     padding-top: 0;
     background: $birux;
     color: #f7f7f7;
+    .sticky {
+        &::before {
+            // @media screen and (max-width:766px) {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(to right, #25a7a6 30%, #178a89 0%);
+                bottom: 24%;
+            // }
+        }
+        &::after {
+
+        }
+    }
     // .sticky {
     //     &::before {
     //         content: "";
@@ -110,7 +124,7 @@
          }
     }
     .no {
-        margin-bottom: 30vh !important;
+        margin-bottom: 10vh !important;
     }
     .bg {
         position: absolute;
