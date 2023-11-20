@@ -34,6 +34,12 @@
         
     }
     .lingkaran {
+        cursor: pointer;
+        transition: .2s;
+        &:hover {
+            box-shadow: 2px 2px 0 0 #444;
+            // transform: translate(-2px -2px) !important;
+        }
         .bendera {
             width: 100%;
             position: absolute;
@@ -140,6 +146,17 @@
             line-height: 2.4rem;
             font-size: 2.2rem;
             // font-style: italic;
+            transition: all .4s ease;
+            background-image: linear-gradient(to right,#333 0%,#333 100%);
+            background-size: 0% 5%;
+            background-repeat: no-repeat;
+            padding-bottom: 16px;
+            background-position: left 80%;
+            
+            &:hover {
+                color: #333!important;
+                background-size: 100% 5%;
+            }
             @media screen and (max-width:766px) {
                 font-size: 1.3rem;
                 line-height: 1.3rem;
@@ -613,7 +630,11 @@
 }
 
 #jud {
+    z-index: 15;
     min-height: auto;
+    position: relative;
+    padding: 16px 0;
+    background: $birux;
     .headline {
         width: fit-content;
         border-radius: 16px;
@@ -906,5 +927,32 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
+    }
+
+}
+.deco {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &-1 {
+        bottom: 8px;
+        right: 8px;
+    }
+    &-3 {
+        width: fit-content;
+        height: auto;
+        left: 4vw;
+        top: 15vh;
+    }
+    &-5 {
+        width: auto;
+        height: fit-content;
+        right: 10vw;
+        top: 15%;
     }
 }
