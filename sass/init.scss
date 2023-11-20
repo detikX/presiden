@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Tilt+Neon&family=Montserrat:wght@400;700&family=Prompt:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Tilt+Neon&family=Outfit:wght@400;700&family=Prompt:wght@400;700&display=swap');
+
+$birux : #54cbca;
 
 html,
 body {
 position: relative;
 height: 100%;
-font-family: 'Poppins';
+font-family: 'Outfit';
 overflow-x: clip;
 h2, h3 {
-    font-family: 'Prompt';
+    font-family: 'Outfit';
     font-weight: 700;
 }
 }
