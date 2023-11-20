@@ -147,14 +147,15 @@
             font-size: 2.2rem;
             // font-style: italic;
             transition: all .4s ease;
-            background-image: linear-gradient(to right,#333 0%,#333 100%);
-            background-size: 0% 5%;
-            background-repeat: no-repeat;
-            padding-bottom: 16px;
-            background-position: left 80%;
+            margin-bottom: 4px;
+            // background-image: linear-gradient(to right,#333 0%,#333 100%);
+            // background-size: 0% 5%;
+            // background-repeat: no-repeat;
+            // padding-bottom: 16px;
+            // background-position: left 80%;
             
             &:hover {
-                color: #333!important;
+                color: #178a89 !important;
                 background-size: 100% 5%;
             }
             @media screen and (max-width:766px) {
@@ -580,6 +581,7 @@
     border-radius: 25px;
     font-weight: bold;
     border: 1px solid rgba(39,39,39,.75);
+    font-size: 1.2rem;
     transform: translate(-2px,-2px);
     transition: all .3s cubic-bezier(.5,2.5,.7,.7) !important;
     &:hover {
@@ -930,6 +932,16 @@
     }
 
 }
+
+@keyframes test {
+    0%, 100% {
+        left: 4vw;
+    }
+    
+    50% {
+        left: 3vw;
+    }
+  }
 .deco {
     position: fixed;
     width: 80px;
@@ -946,6 +958,7 @@
     &-3 {
         width: fit-content;
         height: auto;
+        // animation: test 1s linear infinite;
         left: 4vw;
         top: 15vh;
     }
