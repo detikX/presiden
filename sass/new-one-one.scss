@@ -570,9 +570,10 @@
         outline: 0;
         transform: none;
     }
-    &:focus {
+    &:focus, &:active {
         border: 1px solid rgba(39,39,39,.75);
         box-shadow: 2px 2px 0 0 #333;
+        background: $birux;
     }
 
 }
@@ -806,104 +807,104 @@
         inset: 0;
         background: linear-gradient(to top, #ececec, rgba(#ececec,.5), #ececec);
     }
-    @keyframes motor {
-        0% {
-            left: 120px;
-            opacity: 0;
-        }
-        10% {
-            left: 120px;
-            opacity: 0;
-        }
-        25% {
-            left: 120px;
-            opacity: .5;
-        }
-        30% {
-            left: 120px;
-            opacity: 1;
-        }
-        50% {
-            left: 110px;
-            opacity: 1;
-        }
-        70% {
-            left: 100px;
-            opacity: 1;
-        }
-        80% {
-            left: 50px;
-            opacity: 1;
-        }
-        90% {
-            left: 50px;
-            opacity: .5;
-        }
-        100% {
-            left: 50px;
-            opacity: 0;
-        }
-    }
-
-    @keyframes motormob {
-        0% {
-            left: 65px;
-            opacity: 0;
-        }
-        10% {
-            left: 65px;
-            opacity: 0;
-        }
-        25% {
-            left: 65px;
-            opacity: .5;
-        }
-        30% {
-            left: 65px;
-            opacity: 1;
-        }
-        50% {
-            left: 55px;
-            opacity: 1;
-        }
-        70% {
-            left: 50px;
-            opacity: 1;
-        }
-        80% {
-            left: 20px;
-            opacity: 1;
-        }
-        90% {
-            left: 20px;
-            opacity: .5;
-        }
-        100% {
-            left: 20px;
-            opacity: 0;
-        }
-    }
-    .motor {
-        position: absolute;
-        left: 100px;
-        animation: motor 2s linear infinite;
-        top: 177px;
-        width: 120px;
+}
+@keyframes motor {
+    0% {
+        left: 120px;
         opacity: 0;
-        height: 80px;
-        z-index: 3;
-        filter: drop-shadow(2px 4px 6px black);
-        @media screen and (max-width:766px) {
-            left: 65px;
-            top: 77px;
-            opacity: 0;
-            animation: motormob 2s linear infinite;
-            width: 80px;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
+    }
+    10% {
+        left: 120px;
+        opacity: 0;
+    }
+    25% {
+        left: 120px;
+        opacity: .5;
+    }
+    30% {
+        left: 120px;
+        opacity: 1;
+    }
+    50% {
+        left: 110px;
+        opacity: 1;
+    }
+    70% {
+        left: 100px;
+        opacity: 1;
+    }
+    80% {
+        left: 50px;
+        opacity: 1;
+    }
+    90% {
+        left: 50px;
+        opacity: .5;
+    }
+    100% {
+        left: 50px;
+        opacity: 0;
+    }
+}
+
+@keyframes motormob {
+    0% {
+        left: 65px;
+        opacity: 0;
+    }
+    10% {
+        left: 65px;
+        opacity: 0;
+    }
+    25% {
+        left: 65px;
+        opacity: .5;
+    }
+    30% {
+        left: 65px;
+        opacity: 1;
+    }
+    50% {
+        left: 55px;
+        opacity: 1;
+    }
+    70% {
+        left: 50px;
+        opacity: 1;
+    }
+    80% {
+        left: 20px;
+        opacity: 1;
+    }
+    90% {
+        left: 20px;
+        opacity: .5;
+    }
+    100% {
+        left: 20px;
+        opacity: 0;
+    }
+}
+.motor {
+    position: absolute;
+    left: 100px;
+    animation: motor 2s linear infinite;
+    top: 177px;
+    width: 120px;
+    opacity: 0;
+    height: 80px;
+    z-index: 3;
+    filter: drop-shadow(2px 4px 6px black);
+    @media screen and (max-width:766px) {
+        left: 65px;
+        top: 160px;
+        opacity: 0;
+        animation: motormob 2s linear infinite;
+        width: 80px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 }
