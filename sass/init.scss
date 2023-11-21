@@ -80,6 +80,9 @@ color: #222;
 
 .modal-backdrop {
     background: $birux;
+    @media screen and (max-width:768px) {
+        height: 110vh;
+    }
 }
 
 .modal-open {
