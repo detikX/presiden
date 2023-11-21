@@ -74,7 +74,8 @@ color: #222;
 }
 
 .modal-backdrop.show {
-    opacity: .85;
+    opacity: .95;
+    background: $birux;
 }
 
 .modal-open {
