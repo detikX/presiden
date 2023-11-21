@@ -10,6 +10,11 @@ $(".new-one .container .lingkaran").attr({ "data-aos": "fade-in", "data-aos-dela
 $(".new-one .container .data").attr({ "data-aos": "fade-left", "data-aos-delay": "600", "data-aos-duration": "600", "data-aos-offset": "10", "data-aos-easing": "linear" })
 
 
+$(".scrolltop").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+});
+
 
 // $(".new-one .container .data-foto, .new-one .container .data-anak").attr({ "data-aos": "fade-up", "data-aos-delay": "300", "data-aos-duration": "600", "data-aos-offset": "10", "data-aos-easing": "linear" })
 

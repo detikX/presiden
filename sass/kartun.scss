@@ -245,6 +245,12 @@
     background: #fffacd;
     min-height: auto;
     border-top: 1px solid;
+    .scrolltop {
+        cursor: pointer;
+        width: fit-content;
+        // margin-top: 16px;
+        margin: 16px auto 0;
+    }
     .wrap-detikx {
         position: relative;
     }
