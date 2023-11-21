@@ -67,13 +67,25 @@ color: #222;
     }
 }
 
+.modal {
+    @media screen and (max-width:768px) {
+        width: 90%;
+    }
+}
 
-// .modal-content {
-//     box-shadow: none;
-//     border-radius: 0;
-//     border: 1px solid transparent;
-//     background: transparent;
-// }
+.modal-open {
+    overflow: clip;
+}
+.modal-content {
+    box-shadow: none;
+    border-radius: 0;
+    // border: 1px solid transparent;
+    // background: transparent;
+    @media screen and (max-width:768px) {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
 
 .totop {
     position: relative;
