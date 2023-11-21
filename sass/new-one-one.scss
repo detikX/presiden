@@ -724,9 +724,22 @@
         text-align: center;
        
         .img {
-            width: 135px;
-            height: 135px;
+            width: 200px;
+            height: 200px;
             margin: 0 auto;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+                right: 0;
+                height: 100px;
+                background: #e0ecfc;
+                border-radius: 16px 16px 0 0;
+                border: 1px solid;
+            }
             @media screen and (max-width:768px) {
                 width: 125px;
                 height: 125px;
@@ -734,6 +747,8 @@
             img {
                 width: 100%;
                 height: 100%;
+                position: relative;
+                z-index: 3;
                 object-fit: cover;
             }
 
