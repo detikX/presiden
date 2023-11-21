@@ -78,6 +78,10 @@ color: #222;
     background: $birux;
 }
 
+.modal-backdrop {
+    background: $birux;
+}
+
 .modal-open {
     overflow: clip;
 }
@@ -87,11 +91,11 @@ color: #222;
     border: 1px solid;
     padding-right: 8px;
 
-
-    height: 80vh;
+    height: 90vh;
     // border: 1px solid transparent;
     // background: transparent;
     @media screen and (max-width:768px) {
+        height: 80vh;
         width: 90%;
         padding-right: 0;
         margin: 0 auto;
