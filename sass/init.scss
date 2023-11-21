@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Tilt+Neon&family=Outfit:wght@400;700&family=Prompt:wght@400;700&display=swap');
 
 $birux : #54cbca;
-
+main {
+    overflow-x: hidden;
+}
 html,
 body {
 position: relative;
 height: 100%;
 font-family: 'Outfit';
-// overflow-x: clip;
+// overflow-x: hidden;
+@media screen and (max-width:768px) {
+    // overflow-x: hidden;
+}
 h2, h3 {
     font-family: 'Outfit';
     font-weight: 700;
@@ -68,13 +73,14 @@ color: #222;
 }
 
 .modal {
+    // overflow-x: hidden;
     @media screen and (max-width:768px) {
-        width: 90%;
+        // width: 90%;
     }
 }
 
 .modal-backdrop.show {
-    opacity: .95;
+    opacity: .5;
     background: $birux;
 }
 
@@ -86,7 +92,7 @@ color: #222;
 }
 
 .modal-open {
-    overflow: clip;
+    // overflow: clip;
 }
 .modal-content {
     box-shadow: 5px 5px 0 0 #333;
@@ -94,12 +100,14 @@ color: #222;
     border: 1px solid;
     padding-right: 8px;
 
-    height: 90vh;
+    min-height: 50vh;
     // border: 1px solid transparent;
     // background: transparent;
+    max-height: 90vh;
     @media screen and (max-width:768px) {
-        height: 80vh;
-        width: 90%;
+        min-height: 50vh;
+        max-height: 90vh;
+        // width: 90%;
         padding-right: 0;
         margin: 0 auto;
     }
