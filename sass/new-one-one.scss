@@ -715,3 +715,29 @@
         top: 15%;
     }
 }
+
+.modal {
+    .anak {
+        border-bottom: 1px dashed;
+        padding: 8px 0;
+    }
+    .data-diri {
+        text-align: center;
+       
+        .img {
+            width: 135px;
+            height: 135px;
+            margin: 0 auto;
+            @media screen and (max-width:768px) {
+                width: 125px;
+                height: 125px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+    }
+}
