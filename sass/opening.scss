@@ -120,8 +120,12 @@
         // background: rgba(53, 51, 58,.8);
         padding: 8px;
         margin-bottom: 20vh;
+        @media screen and (max-width:768px) {
+            background: rgba($color: #14546b, $alpha: .9);
+        }
          p {
             margin-bottom: 0;
+            font-size: 1.1rem;
          }
     }
     .no {
