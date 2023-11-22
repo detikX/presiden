@@ -2,7 +2,26 @@
     padding: 0;
     z-index: 15;
     background: #54cbca;
-    
+    &::before {
+        content: "";
+        background-image: url('../img/kotak.png');
+        background-repeat: repeat;
+        z-index: -1;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        opacity: .1;
+        height: 100%;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80vh;
+        background: linear-gradient(to bottom, $birux, transparent)
+    }
     @keyframes deco {
         0%, 100% {
             bottom: 20%;
@@ -151,7 +170,7 @@
             // background: linear-gradient(to top, #ccc, #fff);
             background: #e0ecfc;
             @media screen and (max-width:768px) {
-                height: 300px;
+                height: 250px;
                 width: 100%;
                 
             }
